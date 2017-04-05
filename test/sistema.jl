@@ -1,3 +1,5 @@
+using PyPlot
+
 function sistema(s,v,w,N)
 
 a=Array{Float64}(N+1)
@@ -25,3 +27,5 @@ end
 return x
 
 end
+
+
