@@ -38,7 +38,7 @@ b=Array{Float64}(N+1)
 a[1]=s
 b[1]=v
 
-@parallel for k in 1:N
+@spawn for k in 1:N
 a[k+1]=a[k]+b[k]*2*pi/(N*w)
 b[k+1]=b[k]-w^2*a[k]*2*pi/(N*w)
 end
